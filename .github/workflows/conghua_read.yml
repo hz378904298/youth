@@ -3,7 +3,7 @@
 
 
 
-name: conghua_VIDEO
+name: 葱花视频
 
 on:
   workflow_dispatch:
@@ -40,31 +40,31 @@ jobs:
         env:
           RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO }}
 
-      - name: '运行 【葱花视频账号1-视频阅读2-54篇】'
+      - name: '运行 【葱花视频账号2-视频阅读2-54篇】'
         if: env.RONGHUA_VIDEO2
         run: |
           node Task/RONGHUA_VIDEO.js
         env:
           RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO2 }}
-      - name: '运行 【葱花视频账号1-视频阅读3-35篇】'
+      - name: '运行 【葱花视频账号3-视频阅读3-35篇】'
         if: env.RONGHUA_VIDEO3
         run: |
           node Task/RONGHUA_VIDEO.js
         env:
           RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO3 }}
-      - name: '运行 【葱花视频账号2-视频阅读1-54篇】'
+      - name: '运行 【葱花视频账号4-视频阅读1-54篇】'
         if: env.RONGHUA_VIDEO4
         run: |
           node Task/RONGHUA_VIDEO.js
         env:
           RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO4 }}
-      - name: '运行 【葱花视频账号2-视频阅读2-54篇】'
+      - name: '运行 【葱花视频账号5-视频阅读2-54篇】'
         if: env.RONGHUA_VIDEO5
         run: |
           node Task/RONGHUA_VIDEO.js
         env:
           RONGHUA_VIDEO: ${{ secrets.RONGHUA_VIDEO5 }}
-      - name: '运行 【葱花视频账号2-视频阅读3-54篇】'
+      - name: '运行 【葱花视频账号6-视频阅读3-54篇】'
         if: env.RONGHUA_VIDEO6
         run: |
           node Task/RONGHUA_VIDEO.js
