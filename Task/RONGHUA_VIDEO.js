@@ -19,7 +19,7 @@ const $ = new Env("葱花视频")
 //const notify = $.isNode() ? require('./sendNotify') : '';
 let ReadArr = [], ConghuaBody = "",readscore = 0;
   if (process.env.RONGHUA_VIDEO && process.env.RONGHUA_VIDEO.indexOf('&') > -1) {
-  ConghuaBody = process.env.RONGHUA_VIDEO.split('&');
+  ConghuaBody = process.env.RONGHUA_VIDEO.split('#');
   console.log(`您选择的是用"#"隔开\n`)
   }
   else if (process.env.RONGHUA_VIDEO && process.env.RONGHUA_VIDEO.indexOf('\n') > -1) {
